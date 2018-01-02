@@ -25,6 +25,6 @@ Then, you can change the config object to configure the logs folder, log level, 
   logger.info("writing to both log and console");
 ```
 
-you can also use logger.warn, logger.error, etc.
-the log levels are: error, warn, info, verbose, debug and silly.
+You can also use logger.log(level, message), or logger.warn(message), logger.error(message) etc. 
+The log levels are: error, warn, info, verbose, debug and silly.
 
