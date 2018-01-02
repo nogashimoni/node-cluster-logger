@@ -1,6 +1,14 @@
 let winston = require('winston');
-let config = require('./config');
 let cluster = require('cluster');
+
+let config = {
+    logs: { 
+        level: "debug",
+        maxFiles = 10,
+        fileMaxSize: 1000 * 1000 * 100 //100MB,
+        folder: "."
+    }
+}
 
 
 if (cluster.isMaster) {
