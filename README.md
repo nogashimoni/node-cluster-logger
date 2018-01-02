@@ -15,12 +15,15 @@ The logger will both print to console and write to log files
     "winston": "2.4.0"
 and run npm install.
 
-2) copy paste the logger.js to your project (not fancy, I know, but easy to use). Then, you can configure the file size, amount of files to rotate, and max size of each log file.
+2) copy paste the logger.js to your project (not fancy, I know, but easy to use). 
+Then, you can change the config object to configure the logs folder, log level, amount of files to rotate and max size of each log file.
 
 3) require the logger from anywhere in your code, and use it like in the following example:
 
+```
   const logger = require("./logger");
   logger.info("writing to both log and console");
+```
 
 you can also use logger.warn, logger.error, etc.
 the log levels are: error, warn, info, verbose, debug and silly.
